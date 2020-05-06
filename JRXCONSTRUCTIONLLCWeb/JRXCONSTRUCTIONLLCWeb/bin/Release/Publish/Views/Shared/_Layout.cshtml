@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <style>
+        /*.navbar-brand {
+            float: left;
+            padding: 15px 15px;
+            font-size: 28px;
+            line-height: 20px;
+            font-family: 'Facebook Letter Faces'
+        }*/
+
+        /*.imgHearder {
+            
+  max-width: 100%;
+  height: 500px;
+  width:100%;
+      background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+        /*container {
+            display: block;
+        }*/
+
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 90px;
+        }
+
+
+        .jumbotron {
+            background-color: #f4511e;
+            color: #fff;
+        }
+
+        .footer {
+            padding: 50px 0 20px 0;
+            background-color: #343a40 !important;
+            color: #878c94;
+        }
+
+            .footer .title {
+                text-align: left;
+                color: #696565;
+                font-size: 25px;
+            }
+
+
+            .footer .social-icon {
+                padding: 0px;
+                margin: 0px;
+            }
+
+                .footer .social-icon a {
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 25px;
+                    padding: 5px;
+                }
+
+            .footer .acount-icon a {
+                display: block;
+                color: #fff;
+                font-size: 18px;
+                padding: 5px;
+                text-decoration: none;
+            }
+
+            .footer .acount-icon .fa {
+                margin-right: 25px;
+            }
+
+
+        .button {
+            font-weight: bold;
+            padding: 10px 30px;
+            background: #36b3a8;
+            border: none;
+            border-radius: 100px 100px 100px 100px;
+            height: 50px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-family: Arial;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+                .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+
+            .button:hover span {
+                padding-right: 25px;
+            }
+
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+
+
+
+        /*.headerText {
+            border-radius: 25px;
+            background-color: #4F81BD;
+            color: #FFFFFF;
+            text-align: center;
+            font-family: arial, helvetica, sans-serif;
+            padding: 5px 10px 10px 10px;
+            font-weight: bold;
+            width: 100px;
+            height: 30px;
+        }*/
+
+
+        .herottt {
+            background-image: url('/App_Themes/Images/Kitchen2.jpg');
+            height: 500px;
+            position: relative;
+            background-color: #000;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .herottt_headingttt {
+            position: absolute;
+            left: 0;
+            top: 200px;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        h3 {
+            color: white;
+            line-height: 1.3em;
+            display: inline-block;
+            max-width: 600px;
+        }
+       ptext {
+            color: white;
+            line-height: 1.3em;
+            display: inline-block;
+            max-width: 400px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    @*******Navbar Star*******@
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand"  <a href="@Url.Action("Index", "Home")">
+        <img src="~/App_Themes/Images/JRXlogo4.1.png" alt="" />
+    </a>@*@Html.ActionLink("JRX CONSTRUCTION LLC", "Index", "Home")*@</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        @*@Html.ActionLink("JRX CONSTRUCTION LLC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" @Html.ActionLink("Home", "Index", "Home") <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" @Html.ActionLink("About", "About", "Home")</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" @Html.ActionLink("Contact", "Contact", "Home")</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" @Html.ActionLink("Projects", "Projects", "Home")</a>
+                </li>
+                @*<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" @Html.ActionLink("About", "About", "Home")</a></a>
+                            <a class="dropdown-item" @Html.ActionLink("Contact", "Contact", "Home")</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>*@
+            </ul>
+        </div>
+    </nav>
+    @*******Navbar Ends*******@
+
+
+    @*******************Image Header Start********************@
+    <div class="herottt">
+        <div class="herottt_headingttt ">
+            <h3>JRX CONSTRUCTION</h3>
+
+            <p class="lead" style="color:white">    <strong>FULL-SERVICE INTERIOR RENOVATION AND GENERAL CONTRACTOR</strong></p>
+
+            <button class="button" onclick="location.href='@Url.Action("About", "Home")'"><span>LEARN MORE</span></button>
+
+        </div>
+
+
+    </div>
+    @*******************Image Header Ends********************@
+
+
+    @*<div class="imgHearder" style="background-image: url('/App_Themes/Images/Kitchen2.jpg')">
+        <div class="container imgText ">
+            <h3 style="font-size:36px;">JRX CONSTRUCTION</h3>*@
+    @*<h3>FULL-SERVICE INTERIOR RENOVATION AND GENERAL CONTRACTION</h3>*@
+    @*<p class="lead">    <strong>FULL-SERVICE INTERIOR RENOVATION AND GENERAL CONTRACTOR</strong></p>
+
+                <button class="button" onclick="location.href='@Url.Action("About", "Home")'"><span>LEARN MORE</span></button>
+
+            </div>
+
+
+        </div>*@
+
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+
+
+    @***********************************Footer Start**************************************@
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+
+                    <ul class="social-icon">
+                        <a href="https://www.facebook.com/" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.snapchat.com/" class="social"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4 class="title">JRX CONSTRUCTION LLC</h4>
+                    <span class="acount-icon">
+                        <a href="#"><i aria-hidden="true"></i>@Html.ActionLink("Home", "Index", "Home")</a>
+                        <a href="#"><i aria-hidden="true">@Html.ActionLink("Contact Us", "Contact", "Home")</i></a>
+
+                    </span>
+                </div>
+
+
+            </div>
+            <hr>
+
+            <div class="row text-center">Copyright &copy; @DateTime.Now.Year JRX CONSTRUCTION LLC</div>
+        </div>
+
+
+    </footer>
+
+    @***********************************Footer Ends**************************************@
+
+    @*<script src="~/Scripts/jquery-3.4.1.js"></script>
+        <script src="~/Scripts/bootstrap.js"></script>*@
+</body>
+</html>

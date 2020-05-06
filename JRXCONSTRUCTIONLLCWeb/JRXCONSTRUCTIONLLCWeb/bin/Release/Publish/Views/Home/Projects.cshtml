@@ -1,0 +1,454 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+
+
+
+
+<style>
+    /*.header {
+            text-align: center;
+            padding: 32px;
+        }*/
+
+    /*.flex-column {
+            max-width: 260px;
+        }
+
+        img {
+            margin: 5px;
+        }*/
+
+
+
+    /*.gallery-block{
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+
+    .gallery-block .heading{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .gallery-block .heading h2{
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    .gallery-block.compact-gallery .item{
+      overflow: hidden;
+      margin-bottom: 0;
+      background: black;
+      opacity: 1;
+    }
+
+    .gallery-block.compact-gallery .item .image{
+      transition: 0.8s ease;
+    }
+
+    .gallery-block.compact-gallery .item .info{
+      position: relative;
+        display: inline-block;
+    }
+
+    .gallery-block.compact-gallery .item .description{
+      display: grid;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        padding: 10px;
+        font-size: 17px;
+        line-height: 18px;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 1;
+        color: #fff;
+        transition: 0.8s ease;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+    }
+
+    .gallery-block.compact-gallery .item .description .description-heading{
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    .gallery-block.compact-gallery .item .description .description-body{
+      font-size: 0.8em;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    @@media (min-width: 576px) {
+
+      .gallery-block.compact-gallery .item .description {
+        opacity: 0;
+      }
+
+      .gallery-block.compact-gallery .item a:hover .description {
+        opacity: 1;
+      }
+
+      .gallery-block .zoom-on-hover:hover .image {
+        transform: scale(1.3);
+        opacity: 0.7;
+      }
+    }*/
+
+    .myImg {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+
+<div class="container mt-5">
+    <h1 class="text-align-center">PROJECTS</h1>
+</div>
+
+    <div class="container mt-5">
+
+        <a data-fancybox="gallery" href="~/App_Themes/Images/CTHome1.jpeg"><img src="~/App_Themes/Images/CTHome1.jpeg" class="myImg" width="600" height="400"></a>
+        @*<img src="~/App_Themes/Images/CTHome1.jpeg " class="myImg" width="600" height="400">*@
+
+
+
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-align-center">RESIDENTIAL HOME, WESTERLY, RI</h1>
+        <p class="lead">
+            JRX Construction LLC Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+        </p>
+
+    </div>
+
+
+    <div class="container mt-5">
+
+        <a data-fancybox="gallery" href="~/App_Themes/Images/CThome2.jpeg"><img src="~/App_Themes/Images/CThome2.jpeg" class="myImg" width="600" height="400"></a>
+        @*<img src="~/App_Themes/Images/CTHome1.jpeg " class="myImg" width="600" height="400">*@
+
+
+
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-align-center">RESIDENTIAL HOME, MYSTIC, CT</h1>
+        <p class="lead">
+            JRX Construction LLC Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+        </p>
+
+    </div>
+
+    <div class="container mt-5">
+
+        <a data-fancybox="gallery" href="~/App_Themes/Images/NYHome1.jpeg"><img src="~/App_Themes/Images/NYHome1.jpeg" class="myImg" width="600" height="400"></a>
+        @*<img src="~/App_Themes/Images/CTHome1.jpeg " class="myImg" width="600" height="400">*@
+
+
+
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-align-center">RESIDENTIAL HOME, GROTON, CT</h1>
+        <p class="lead">
+            JRX Construction LLC Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+        </p>
+
+    </div>
+
+    @*<div class="container " style="text-align  :center">
+            <h1>My First Bootstrap Page</h1>
+
+            <div class="col-4>
+                <a data-fancybox="gallery" href="~/App_Themes/Images/CTHome1.jpeg"><img src="~/App_Themes/Images/CTHome1.jpeg"></a>
+            </div>
+            <p>This part is inside a .container-fluid class.</p>
+            <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+        </div>*@
+
+
+
+    @*<section class="gallery-block compact-gallery">
+            <div class="container">
+                <div class="heading">
+                    <h2>Bootstrap 4 Compact Gallery</h2>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a data-fancybox="gallery" href="~/App_Themes/Images/CTHome1.jpeg"><img src="~/App_Themes/Images/CTHome1.jpeg"></a>
+
+                            <span class="description">
+                                <span class="description-heading">Lorem Ipsum</span>
+                                <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a data-fancybox="gallery" href="~/App_Themes/Images/Beaukitchen.jpeg"><img src="~/App_Themes/Images/Beaukitchen.jpeg"></a>
+
+                        <span class="description">
+                            <span class="description-heading">Lorem Ipsum</span>
+                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </span>
+                        </a>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+
+                        <a data-fancybox="gallery" href="~/App_Themes/Images/CThome2.jpeg"><img src="~/App_Themes/Images/CThome2.jpeg"></a>
+
+                        <img class="img-fluid image" src="~/App_Themes/Images/CThome2.jpeg">
+                        <span class="description">
+                            <span class="description-heading">Lorem Ipsum</span>
+                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="~/App_Themes/Images/Kitchen2.jpg">
+                            <img class="img-fluid image" src="~/App_Themes/Images/Kitchen2.jpg">
+                            <span class="description">
+                                <span class="description-heading">Lorem Ipsum</span>
+                                <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="~/App_Themes/Images/Kitchen3.jpeg">
+                            <img class="img-fluid image" src="~/App_Themes/Images/Kitchen3.jpeg">
+                            <span class="description">
+                                <span class="description-heading">Lorem Ipsum</span>
+                                <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="~/App_Themes/Images/NewKitchen.jpg">
+                            <img class="img-fluid image" src="~/App_Themes/Images/NewKitchen.jpg">
+                            <span class="description">
+                                <span class="description-heading">Lorem Ipsum</span>
+                                <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="~/App_Themes/Images/NYHome1.jpeg">
+                            <img class="img-fluid image" src="~/App_Themes/Images/NYHome1.jpeg">
+                            <span class="description">
+                                <span class="description-heading">Lorem Ipsum</span>
+                                <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 6.01.12 PM.jpeg">
+                            <img class="img-fluid image" src="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 6.01.12 PM.jpeg">
+                            <span class="description">
+                                <span class="description-heading">Lorem Ipsum</span>
+                                <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 7.14.41 PM.jpeg">
+                            <img class="img-fluid image" src="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 7.14.41 PM.jpeg">
+                            <span class="description">
+                                <span class="description-heading">Lorem Ipsum</span>
+                                <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    @*<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>*@
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>*@
+    @*<script type="text/javascript">
+            baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
+        </script>*@
+
+
+    <!-- Header -->
+    @*<div class="header">
+            <h1>Projects</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+        </div>*@
+    @*<figure></figure>
+
+
+
+
+
+
+        <div class="container">
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+                <div class="d-flex flex-column">
+
+                    <img src="~/App_Themes/Images/Beaukitchen.jpeg" class="img-fluid">
+                    <img src="~/App_Themes/Images/Kitchen3.jpeg" class="img-fluid">
+                </div>
+                <div class="d-flex flex-column">
+                    <img src="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 6.01.12 PM.jpeg" class="img-fluid">
+                    <img src="~/App_Themes/Images/NYHome1.jpeg" class="img-fluid">
+                </div>
+                <div class="d-flex flex-column">
+                    <img src="~/App_Themes/Images/CThome2.jpeg" class="img-fluid">
+                    <img src="~/App_Themes/Images/CTHome1.jpeg" class="img-fluid">
+                </div>
+                <div class="d-flex flex-column">
+                    <img src="~/App_Themes/Images/Kitchen3.jpeg" class="img-fluid">
+                    <img src="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 7.14.41 PM.jpeg" class="img-fluid">
+                </div>
+            </div>
+        </div>*@
+
+
+    @*<div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <img src="~/App_Themes/Images/Beaukitchen.jpeg" class="img-fluid">
+                </div>
+
+
+                    <h1 class="text-align-center">OUR PROJECTS</h1>
+
+                    <p class="lead">
+                        Through dedicated experience and training.
+                    </p>
+                </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="~/App_Themes/Images/Kitchen3.jpeg" class="img-fluid">
+                </div>
+
+                <h1 class="text-align-center">OUR PROJECTS</h1>
+
+                <p class="lead">
+                    Through dedicated experience and training.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 6.01.12 PM.jpeg" class="img-fluid">
+                </div>
+
+                <h1 class="text-align-center">OUR PROJECTS</h1>
+
+                <p class="lead">
+                    Through dedicated experience and training.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="~/App_Themes/Images/NYHome1.jpeg" class="img-fluid">
+                </div>
+
+                <h1 class="text-align-center">OUR PROJECTS</h1>
+
+                <p class="lead">
+                    Through dedicated experience and training.
+                </p>
+            </div>
+        </div>*@
+
+
+
+    @*<div class="row">
+            <div class="col-md-12">
+
+                <div id="mdb-lightbox-ui"></div>
+
+                <div class="mdb-lightbox">
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/Beaukitchen.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid">
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/Kitchen3.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/Kitchen3.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 6.01.12 PM.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 7.14.41 PM.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="~/App_Themes/Images/WhatsApp Image 2020-03-25 at 7.14.41 PM.jpeg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/CThome2.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="~/App_Themes/Images/CThome2.jpeg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/NYHome1.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="~/App_Themes/Images/NYHome1.jpeg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/NewKitchen.jpg" data-size="1600x1067">
+                            <img alt="picture" src="~/App_Themes/Images/NewKitchen.jpg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="~/App_Themes/Images/Kitchen3.jpeg" data-size="1600x1067">
+                            <img alt="picture" src="~/App_Themes/Images/Kitchen3.jpeg" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                </div>
+
+            </div>
+        </div>*@
+
