@@ -13,6 +13,11 @@ namespace JRXCONSTRUCTIONLLCWeb
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Home", "Home", new { controller = "Home", action = "Index" });
+            routes.MapRoute("About", "About", new { controller = "Home", action = "About" });
+            routes.MapRoute("Contact", "Contact", new { controller = "Home", action = "Contact" });
+            routes.MapRoute("Projects", "Projects", new { controller = "Home", action = "Projects" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
